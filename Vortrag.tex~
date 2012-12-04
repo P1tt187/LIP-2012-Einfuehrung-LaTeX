@@ -38,17 +38,22 @@
 \input{preambel/Beamer-Settings}
 \input{preambel/Beamer-LaTeX-newcommands}
 
-\title{Einführung in LaTeX im Vergleich zu Office}
-%\subtitle{Referent: Prof. Dr. rer. nat. Martin Golz \\
+\title{Entwicklung mobiler Anwendungslösungen für Diensttauglichkeitstests}
+\subtitle{Referent: Prof. Dr. rer. nat. Martin Golz \\
 Koreferent: Dipl. Inf. Thomas Schnupp}
-\author{Fabian Markert \& Kai Trott}
+\author{Fabian Markert}
 \institute{Fachhochschule Schmalkalden}
 \titlegraphic{\includegraphics[height=1.5cm]{pictures/logo}}
 \date{\today}
 
 \begin{document}
 \input{content/titlepage}
-
+\input{content/motivation}
+\input{content/erfassungsmethoden}
+\input{content/auswahl-zielplattform}
+\input{content/umsetzung-n-back}
+\input{content/pilotexperiment}
+\input{content/fazit}
 %   \input{content/Beamer-Examples}
 %  	\input{content/Beamer-Title}
 %  	\input{content/Beamer-Content}
