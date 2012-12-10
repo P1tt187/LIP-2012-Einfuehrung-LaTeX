@@ -1,0 +1,51 @@
+
+
+# Markdown
+Sooo... was ist Markdown? Fangen wir am besten mit dem Ziel von Markdown an. 
+
+## Ziel
+Also mit einfach ist gemeint: ziemlich Deppensicher. Was damit den Kontrast zu Latex bildet.
+
+## Ursprung
+von zwei unabhängigen Programmierern entwickelt. (John Gruber und Aaron Swartz)
+2004
+zum Vergleich: Textile und ReStructuredText erschienen 2002.  
+Die beiden haben ähnlich Komponenten. Markdown fasst das wesentliche zusammen. Ich gehe aber nicht auf die Unterschiede ein. Also nur damit ihr das mal gehört habt. 
+
+## Technik
+Es sind dann noch ein paar weitere Feinheiten in Markdown vorhanden. Drum hier nur das wichtigste. 
+
+## Code
+Also Tab davor und fertig. Codeblöcke erkläre ich jetzt schon, weil die sehr hilfreich ab hier sind. 
+
+## Überschriften
+Die Überschriften 1 und 2 würden in diesen Fall dazu führen, dass eine Sektion aufgemacht wird bzw. eine neue Folie. Drum geb ich die jetzt nicht aus. 
+
+## geordnete Listen
+oh, was haben wir hier? die Liste ist geordnet, auch wenn die Zahlen nicht stimmen. Markdown geht einfach von der ersten Zahl aus und zählt von da an. Also wenn man mal einen Eintrag vergisst, muss man nicht manuell alle Zahlen umschreiben. 
+
+## inline HTML
+Dadurch, dass man HTML inline schreiben kann, kann Markdown somit alles, was HTML kann. 
+
+
+
+# Pandoc Markdown
+sooo. nun kommen wir zu Pandoc Markdown . Das erweitert den Spaß gewaltig!
+Pandoc ist ein in Haskell geschriebenes Konvertierungstool (zu etwa docx, odt, latex, pdf, andere markups, epub, slides), hat darüber hinaus aber die größte verfügbare Erweiterung von Markdown in sich. Direkt gefolgt von Multimarkdown. 
+Pandoc sieht dann so aus: ...
+
+## Technik
+Haskell wie auch Pandoc setzen auf Unicode bzw. UTF-8 . Also damit ihr so viele Umlaute und chinesische Zeichen schreiben könnt wie ihr wollt und am Ende keine hässlichen Encoding-Fehler auftauchen.
+Also jede Menge Sachen sind da noch zusätzlich drin, aber jedenfalls zu viel um alles zu erklären. Drum nur das wichtigste. 
+
+## Metadaten
+womit die erste Seite generiert wurde. 
+
+## inline Latex
+weil Latex direkt schreiben kann, geht also so viel, wie in Latex auch.
+
+## Nachlesen
+Als Fazit würde ich daher sagen, macht Pandoc Markdown: Latex ein wenig überflüssig. Jedenfalls als Auszeichnungssprache.
+Auf der anderen Seite erzeugt Pandoc über Latex die PDFs, weshalb auch der grafische Look zu dem Latex-Vortrag passt. Technisch ist Latex also notwendig. 
+
+

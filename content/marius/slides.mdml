@@ -1,0 +1,206 @@
+% Pandoc Markdown
+% Marius Wegner
+% 9.12.2012
+
+
+# Markdown
+
+
+## Ziel
+
+* *einfache Auszeichnungssprache* zum
+* erzeugen von *(X)HTML*
+
+
+## Ursprung
+
+* angelehnt an Plaintext-Formatierungen in frühen E-Mails
+* basiert auf reStructuredText und Textile.
+
+
+## Technik
+
+* Textformatierung (fett, kursiv oder als Code)
+* Überschriften
+* geordnete und ungeordnete Listen
+* Links
+* Bilder
+* direkt HTML-Code
+
+
+## Beispiel - Code
+	
+	### Beispiel
+	> A **Markdown**-formatted document should be
+	publishable as-is, as plain text, 
+	without looking like it’s been marked up with 
+	tags or formatting instructions.
+	 - [John Gruber](http://daringfireball.net/)
+
+
+## Beispiel - Ergebnis
+
+	Konsole: markdown beispiel.md > beispiel.html
+
+### Beispiel
+> A **Markdown**-formatted document should be
+publishable as-is, as plain text, 
+without looking like it’s been marked up with 
+tags or formatting instructions.
+ - [John Gruber](http://daringfireball.net/)
+
+
+## Code
+
+	`Code-Blöcke`
+
+`Code-Blöcke`
+
+
+## Kursiv, Fett und beides
+
+	*Kursiv* und **Fett**
+
+*Kursiv* und **Fett**
+
+
+## Überschriften
+
+	1. Überschrift
+	==============
+	
+	2. Überschrift
+	--------------
+	
+	# 1. Überschrift
+
+oder
+	
+	#### 4. Überschrift
+
+#### 4. Überschrift
+
+
+## ungeordnete Listen
+	
+	* ungeordnete Liste
+	* zweiter Eintrag
+	+ ungeordnete Liste
+	- ungeordnete Liste
+
+* ungeordnete Liste
+* zweiter Eintrag
++ ungeordnete Liste
+- ungeordnete Liste
+
+
+## geordnete Listen
+
+	1) geordnete Listen
+	42) zweiter Eintrag
+	23) dritter Eintrag
+	b) geordnete Listen
+	c) zweiter Eintrag
+
+1) geordnete Listen
+42) zweiter Eintrag
+23) dritter Eintrag
+b) geordnete Listen
+c) zweiter Eintrag
+
+
+## Links
+
+	[Websitelink](http://example.com)
+
+[Websitelink](http://example.com)
+
+
+## Bilder 
+
+	![Dopefish lives!](example.png)
+
+![Dopefish lives!](example.png)
+
+
+## inline HTML
+
+	<p>Hello World</p>
+	
+<p>Hello World</p>
+
+
+## Variation
+
+* *Google+ Markdown*: reduziertes Markdown nur mit \_kursiv_, \*fett* und -durchgestrichen-
+
+* *GitHub Flavored Markdown*: erweitertes Markdown um Features am Codeblock, Referenzen und was man sonst so auf Github braucht. 
+
+* Multimarkdown und noch einige andere.
+
+
+
+
+# Pandoc Markdown
+
+
+## Technik
+* Markdown
+* Unicode
+* Fußnoten
+* Tabellen
+* Metadaten
+* TexMath
+* inline Latex
+* Haufenweise Optionen (z.B. Inhaltsverzeichnis, Templates, Syntax-Highlighting, Style-Referenzen)
+
+
+## Tabellen
+
+	  Right     Left     Center     Default
+	-------     ------ ----------   -------
+	     12     12        12            12
+	    123     123       123          123
+	      1     1          1             1
+
+  Right     Left     Center     Default
+-------     ------ ----------   -------
+     12     12        12            12
+    123     123       123          123
+      1     1          1             1
+
+
+## Metadaten
+
+z.B.
+
+	% Pandoc Markdown
+	% Marius Wegner
+	% 9.12.2012
+
+
+
+oder als **[Dublincore](http://dublincore.org/documents/dces/)**
+
+
+
+## TexMath
+
+	$\sqrt[n]{1+x+x^2+x^3+\ldots}$
+
+$\sqrt[n]{1+x+x^2+x^3+\ldots}$
+
+
+## inline Latex
+
+	\textbf{hello world}
+
+\textbf{hello world}
+
+
+
+## Nachlesen, Ende
+
+Zum nachlesen: [http://johnmacfarlane.net/pandoc/README.html](http://johnmacfarlane.net/pandoc/README.html)
+
+

@@ -1,0 +1,269 @@
+\section{Markdown}
+
+\subsection{Ziel}
+
+\begin{itemize}
+\item
+  \emph{einfache Auszeichnungssprache} zum
+\item
+  erzeugen von \emph{(X)HTML}
+\end{itemize}
+
+\subsection{Ursprung}
+
+\begin{itemize}
+\item
+  angelehnt an Plaintext-Formatierungen in frühen E-Mails
+\item
+  basiert auf reStructuredText und Textile.
+\end{itemize}
+
+\subsection{Technik}
+
+\begin{itemize}
+\item
+  Textformatierung (fett, kursiv oder als Code)
+\item
+  Überschriften
+\item
+  geordnete und ungeordnete Listen
+\item
+  Links
+\item
+  Bilder
+\item
+  direkt HTML-Code
+\end{itemize}
+
+\subsection{Beispiel - Code}
+
+\begin{verbatim}
+### Beispiel
+> A **Markdown**-formatted document should be
+publishable as-is, as plain text, 
+without looking like it’s been marked up with 
+tags or formatting instructions.
+ - [John Gruber](http://daringfireball.net/)
+\end{verbatim}
+
+\subsection{Beispiel - Ergebnis}
+
+\begin{verbatim}
+Konsole: markdown beispiel.md > beispiel.html
+\end{verbatim}
+
+\subsubsection{Beispiel}
+
+\begin{quote}
+A \textbf{Markdown}-formatted document should be publishable as-is, as
+plain text, without looking like it's been marked up with tags or
+formatting instructions. - \href{http://daringfireball.net/}{John
+Gruber}
+\end{quote}
+
+\subsection{Code}
+
+\begin{verbatim}
+`Code-Blöcke`
+\end{verbatim}
+
+\texttt{Code-Blöcke}
+
+\subsection{Kursiv, Fett und beides}
+
+\begin{verbatim}
+*Kursiv* und **Fett**
+\end{verbatim}
+
+\emph{Kursiv} und \textbf{Fett}
+
+\subsection{Überschriften}
+
+\begin{verbatim}
+1. Überschrift
+==============
+
+2. Überschrift
+--------------
+
+# 1. Überschrift
+\end{verbatim}
+
+oder
+
+\begin{verbatim}
+#### 4. Überschrift
+\end{verbatim}
+
+%\paragraph{4. Überschrift}
+
+\subsection{ungeordnete Listen}
+
+\begin{verbatim}
+* ungeordnete Liste
+* zweiter Eintrag
++ ungeordnete Liste
+- ungeordnete Liste
+\end{verbatim}
+
+\begin{itemize}
+\item
+  ungeordnete Liste
+\item
+  zweiter Eintrag
+\item
+  ungeordnete Liste
+\item
+  ungeordnete Liste
+\end{itemize}
+
+\subsection{geordnete Listen}
+
+\begin{verbatim}
+1) geordnete Listen
+42) zweiter Eintrag
+23) dritter Eintrag
+b) geordnete Listen
+c) zweiter Eintrag
+\end{verbatim}
+
+\begin{enumerate}[1)]
+\item
+  geordnete Listen
+\item
+  zweiter Eintrag
+\item
+  dritter Eintrag
+\end{enumerate}
+
+\begin{enumerate}[a)]
+\setcounter{enumi}{1}
+\item
+  geordnete Listen
+\item
+  zweiter Eintrag
+\end{enumerate}
+
+\subsection{Links}
+
+\begin{verbatim}
+[Websitelink](http://example.com)
+\end{verbatim}
+
+\href{http://example.com}{Websitelink}
+
+\subsection{Bilder}
+
+\begin{verbatim}
+![Dopefish lives!](example.png)
+\end{verbatim}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics{./pictures/example.png}
+\caption{Dopefish lives!}
+\end{figure}
+
+\subsection{inline HTML}
+
+\begin{verbatim}
+<p>Hello World</p>
+\end{verbatim}
+
+Hello World
+
+\subsection{Variation}
+
+\begin{itemize}
+\item
+  \emph{Google+ Markdown}: reduziertes Markdown nur mit \_kursiv\_,
+  *fett* und -durchgestrichen-
+\item
+  \emph{GitHub Flavored Markdown}: erweitertes Markdown um Features am
+  Codeblock, Referenzen und was man sonst so auf Github braucht.
+\item
+  Multimarkdown und noch einige andere.
+\end{itemize}
+
+\section{Pandoc Markdown}
+
+\subsection{Technik}
+
+\begin{itemize}
+\item
+  Markdown
+\item
+  Unicode
+\item
+  Fußnoten
+\item
+  Tabellen
+\item
+  Metadaten
+\item
+  TexMath
+\item
+  inline Latex
+\item
+  Haufenweise Optionen (z.B. Inhaltsverzeichnis, Templates,
+  Syntax-Highlighting, Style-Referenzen)
+\end{itemize}
+
+\subsection{Tabellen}
+
+\begin{verbatim}
+  Right     Left     Center     Default
+-------     ------ ----------   -------
+     12     12        12            12
+    123     123       123          123
+      1     1          1             1
+\end{verbatim}
+
+\ctable[pos = H, center, botcap]{rlcl}
+{% notes
+}
+{% rows
+\FL
+Right & Left & Center & Default
+\ML
+12 & 12 & 12 & 12
+\\\noalign{\medskip}
+123 & 123 & 123 & 123
+\\\noalign{\medskip}
+1 & 1 & 1 & 1
+\LL
+}
+
+\subsection{Metadaten}
+
+z.B.
+
+\begin{verbatim}
+% Pandoc Markdown
+% Marius Wegner
+% 9.12.2012
+\end{verbatim}
+
+oder als
+\textbf{\href{http://dublincore.org/documents/dces/}{Dublincore}}
+
+\subsection{TexMath}
+
+\begin{verbatim}
+$\sqrt[n]{1+x+x^2+x^3+\ldots}$
+\end{verbatim}
+
+$\sqrt[n]{1+x+x^2+x^3+\ldots}$
+
+\subsection{inline Latex}
+
+\begin{verbatim}
+\textbf{hello world}
+\end{verbatim}
+
+\textbf{hello world}
+
+\subsection{Nachlesen, Ende}
+
+Zum nachlesen:
+\href{http://johnmacfarlane.net/pandoc/README.html}{http://johnmacfarlane.net/pandoc/README.html}
