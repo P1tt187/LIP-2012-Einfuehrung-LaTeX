@@ -1,6 +1,6 @@
 \section{Markdown}
 
-\subsection{Ziel}
+\begin{frame}\frametitle{Ziel}
 
 \begin{itemize}
 \item
@@ -9,7 +9,9 @@
   erzeugen von \emph{(X)HTML}
 \end{itemize}
 
-\subsection{Ursprung}
+\end{frame}
+
+\begin{frame}\frametitle{Ursprung}
 
 \begin{itemize}
 \item
@@ -18,7 +20,41 @@
   basiert auf reStructuredText und Textile.
 \end{itemize}
 
-\subsection{Technik}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Beispiel - Code}
+
+\begin{verbatim}
+### Beispiel
+> A **Markdown**-formatted document should be
+publishable as-is, as plain text, 
+without looking like it’s been marked up with 
+tags or formatting instructions.
+ - [John Gruber](http://daringfireball.net/)
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Beispiel - Ergebnis}
+
+\begin{verbatim}
+Konsole: markdown beispiel.md > beispiel.html
+\end{verbatim}
+
+\begin{block}{Beispiel}
+
+\begin{quote}
+A \textbf{Markdown}-formatted document should be publishable as-is, as
+plain text, without looking like it's been marked up with tags or
+formatting instructions. - \href{http://daringfireball.net/}{John
+Gruber}
+\end{quote}
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}\frametitle{Technik}
 
 \begin{itemize}
 \item
@@ -35,33 +71,9 @@
   direkt HTML-Code
 \end{itemize}
 
-\subsection{Beispiel - Code}
+\end{frame}
 
-\begin{verbatim}
-### Beispiel
-> A **Markdown**-formatted document should be
-publishable as-is, as plain text, 
-without looking like it’s been marked up with 
-tags or formatting instructions.
- - [John Gruber](http://daringfireball.net/)
-\end{verbatim}
-
-\subsection{Beispiel - Ergebnis}
-
-\begin{verbatim}
-Konsole: markdown beispiel.md > beispiel.html
-\end{verbatim}
-
-\subsubsection{Beispiel}
-
-\begin{quote}
-A \textbf{Markdown}-formatted document should be publishable as-is, as
-plain text, without looking like it's been marked up with tags or
-formatting instructions. - \href{http://daringfireball.net/}{John
-Gruber}
-\end{quote}
-
-\subsection{Code}
+\begin{frame}[fragile]\frametitle{Code}
 
 \begin{verbatim}
 `Code-Blöcke`
@@ -69,7 +81,9 @@ Gruber}
 
 \texttt{Code-Blöcke}
 
-\subsection{Kursiv, Fett und beides}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Kursiv, Fett und beides}
 
 \begin{verbatim}
 *Kursiv* und **Fett**
@@ -77,7 +91,9 @@ Gruber}
 
 \emph{Kursiv} und \textbf{Fett}
 
-\subsection{Überschriften}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Überschriften}
 
 \begin{verbatim}
 1. Überschrift
@@ -95,9 +111,13 @@ oder
 #### 4. Überschrift
 \end{verbatim}
 
-%\paragraph{4. Überschrift}
+\begin{block}{4. Überschrift}
 
-\subsection{ungeordnete Listen}
+\end{block}
+
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{ungeordnete Listen}
 
 \begin{verbatim}
 * ungeordnete Liste
@@ -117,7 +137,9 @@ oder
   ungeordnete Liste
 \end{itemize}
 
-\subsection{geordnete Listen}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{geordnete Listen}
 
 \begin{verbatim}
 1) geordnete Listen
@@ -144,7 +166,9 @@ c) zweiter Eintrag
   zweiter Eintrag
 \end{enumerate}
 
-\subsection{Links}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Links}
 
 \begin{verbatim}
 [Websitelink](http://example.com)
@@ -152,19 +176,23 @@ c) zweiter Eintrag
 
 \href{http://example.com}{Websitelink}
 
-\subsection{Bilder}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Bilder}
 
 \begin{verbatim}
-![Dopefish lives!](example.png)
+![Beispielbild](pictures/example.png)
 \end{verbatim}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics{./pictures/example.png}
-\caption{Dopefish lives!}
+\includegraphics{pictures/example.png}
+\caption{Beispielbild}
 \end{figure}
 
-\subsection{inline HTML}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{inline HTML}
 
 \begin{verbatim}
 <p>Hello World</p>
@@ -172,7 +200,9 @@ c) zweiter Eintrag
 
 Hello World
 
-\subsection{Variation}
+\end{frame}
+
+\begin{frame}\frametitle{Variation}
 
 \begin{itemize}
 \item
@@ -185,9 +215,11 @@ Hello World
   Multimarkdown und noch einige andere.
 \end{itemize}
 
+\end{frame}
+
 \section{Pandoc Markdown}
 
-\subsection{Technik}
+\begin{frame}\frametitle{Technik}
 
 \begin{itemize}
 \item
@@ -209,7 +241,9 @@ Hello World
   Syntax-Highlighting, Style-Referenzen)
 \end{itemize}
 
-\subsection{Tabellen}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Tabellen}
 
 \begin{verbatim}
   Right     Left     Center     Default
@@ -234,7 +268,9 @@ Right & Left & Center & Default
 \LL
 }
 
-\subsection{Metadaten}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{Metadaten}
 
 z.B.
 
@@ -245,9 +281,11 @@ z.B.
 \end{verbatim}
 
 oder als
-\textbf{\href{http://dublincore.org/documents/dces/}{Dublincore}}
+\textbf{\href{http://dublincore.org/documents/dces/}{Dublincore}}.
 
-\subsection{TexMath}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{TexMath}
 
 \begin{verbatim}
 $\sqrt[n]{1+x+x^2+x^3+\ldots}$
@@ -255,7 +293,9 @@ $\sqrt[n]{1+x+x^2+x^3+\ldots}$
 
 $\sqrt[n]{1+x+x^2+x^3+\ldots}$
 
-\subsection{inline Latex}
+\end{frame}
+
+\begin{frame}[fragile]\frametitle{inline Latex}
 
 \begin{verbatim}
 \textbf{hello world}
@@ -263,7 +303,11 @@ $\sqrt[n]{1+x+x^2+x^3+\ldots}$
 
 \textbf{hello world}
 
-\subsection{Nachlesen, Ende}
+\end{frame}
+
+\begin{frame}\frametitle{Nachlesen, Ende}
 
 Zum nachlesen:
 \href{http://johnmacfarlane.net/pandoc/README.html}{http://johnmacfarlane.net/pandoc/README.html}
+
+\end{frame}
