@@ -30,16 +30,18 @@
 	\begin{itemize}[<+->]
 		\item alle Kommandos beginnen mit einem $\backslash$
 		\item Kommentare mit einem \%
+		\item Umgebungen beginnen mit $\backslash$begin\{ Umgebungsname\} und enden mit $\backslash$end\{Umgebungsname\}
 	\end{itemize}
 \end{frame}
-\begin{frame}{Beispiel Code}
+
+\begin{frame}[fragile]{Beispiel Code}
 	\lstsettex
 	\begin{Code}
 		\lstinputlisting[linerange=1-19,caption={Teil 1}]{./listings/demonstration.tex}
 	\end{Code}
 
 \end{frame}
-\begin{frame}{Beispiel Code}
+\begin{frame}[fragile]{Beispiel Code}
 	\lstsettex
 	\begin{Code}
 		\lstinputlisting[linerange=21-31,caption={Teil 2}]{./listings/demonstration.tex}
@@ -48,12 +50,12 @@
 \end{frame}
 
 \begin{frame}{Beispiel Ergebnis}
-\begin{figure}[tbph]
-\centering
-\includegraphics[height=\textheight]{./pictures/demonstration}
-\caption{Das PDF}
-
-\label{fig:demonstration}
-\end{figure}
-
+	\begin{figure}[tbph]
+	\centering
+	\includegraphics[height=\textheight]{./pictures/demonstration}
+	\caption{Das PDF}
+	\label{fig:demonstration}
+	\end{figure}
 \end{frame}
+
+
