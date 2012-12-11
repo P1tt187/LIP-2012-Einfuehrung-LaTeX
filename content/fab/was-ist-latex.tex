@@ -3,10 +3,10 @@
 \input{./preambel/tocframe}
 \begin{frame}{Was ist \LaTeX ?}
 	\begin{itemize}[<+->]
-	\item \LaTeX \mbox{ } = \textbf{La}mport \textbf{TeX}
-	\item entwickelt von Leslie Lamport anfang der 80er entwicklet
 	\item basiert auf dem Textsatzsystem \TeX
 	\item \TeX \mbox{ } bereits 1977 von Donald E. Knuth entwickelt
+	\item \LaTeX \mbox{ } = \textbf{La}mport \textbf{TeX}
+	\item entwickelt von Leslie Lamport anfang der 80er entwicklet
 	\item \LaTeX \mbox{ } stellt eine Vereinfachung von \TeX \mbox{ } dar
 	\end{itemize}
 \end{frame}
@@ -26,6 +26,16 @@
 
 \section{Syntax \& Aufbau eines \LaTeX -Dokuments}
 \input{./preambel/tocframe}
-\begin{frame}{}
-Inhalt...
+\begin{frame}{Generelle Syntax}
+	\begin{itemize}[<+->]
+		\item alle Kommandos beginnen mit einem $\backslash$
+		\item Kommentare mit einem \%
+	\end{itemize}
+\end{frame}
+\begin{frame}{Beispiel}
+	\lstsettex
+	\begin{Code}
+		\lstinputlisting[linerange=1-19,caption={Teil 1}]{./listings/demonstration.tex}
+	\end{Code}
+
 \end{frame}
