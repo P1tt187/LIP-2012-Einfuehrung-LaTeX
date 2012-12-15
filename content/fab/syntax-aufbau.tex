@@ -1,0 +1,42 @@
+\section{Syntax \& Aufbau eines \LaTeX -Dokuments}
+\input{./preambel/tocframe}
+\begin{frame}{Generelle Syntax}
+	\begin{itemize}[<+->]
+		\item alle Kommandos beginnen mit einem $\backslash$
+		\item Kommentare mit einem \%
+		\item Umgebungen beginnen mit $\backslash$begin\{ Umgebungsname\} und enden mit $\backslash$end\{Umgebungsname\}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Beispiel Code}
+	\lstsettex
+	\begin{Code}
+		\lstinputlisting[linerange=1-19,title=\lstname]{./listings/demonstration.tex}
+	\end{Code}
+
+\end{frame}
+\begin{frame}[fragile]{Beispiel Code}
+	\lstsettex
+	\begin{Code}
+		\lstinputlisting[linerange=21-35,title=\lstname]{./listings/demonstration.tex}
+	\end{Code}
+
+\end{frame}
+
+\begin{frame}{Beispiel Ergebnis}
+	\begin{figure}[tbph]
+	\centering
+	\includegraphics[height=\textheight]{./pictures/demonstration}
+	\caption{Das PDF}
+	\label{fig:demonstration}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{wichtige Befehle}
+	\begin{itemize}[<+->]
+	\item \lstinputlisting[linerange=1-1]{./listings/commands.tex} $ \Rightarrow $ \textbf{fett}
+	\item \lstinputlisting[linerange=2-2]{./listings/commands.tex} $ \Rightarrow $ \textit{kursiv}
+	\item \lstinputlisting[linerange=3-3]{./listings/commands.tex} $ \Rightarrow $ \underline{unterstrichen}
+	\item \lstinputlisting[linerange=4-4]{./listings/commands.tex} $ \Rightarrow $ \textbf{\textit{\underline{kombination}}}
+	\end{itemize}
+\end{frame}
