@@ -41,10 +41,34 @@
 \end{frame}
 
 \begin{frame}{wichtige Befehle}
+\lstsettex
 	\begin{itemize}[<+->]
 	\item \lstinputlisting[linerange=1-1]{./listings/commands.tex} $ \Rightarrow $ \textbf{fett}
 	\item \lstinputlisting[linerange=2-2]{./listings/commands.tex} $ \Rightarrow $ \textit{kursiv}
 	\item \lstinputlisting[linerange=3-3]{./listings/commands.tex} $ \Rightarrow $ \underline{unterstrichen}
 	\item \lstinputlisting[linerange=4-4]{./listings/commands.tex} $ \Rightarrow $ \textbf{\textit{\underline{kombination}}}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Dokumentenklassen}
+	\begin{itemize}[<+->]
+		\item Briefe $ \Rightarrow $ letter,g-brief,scrlttr2
+			\begin{itemize}[<+->]
+				\item keine Gliederungsbefehle
+			\end{itemize}
+		\item Artikel $ \Rightarrow $ articel,scrartcl
+			\begin{itemize}[<+->]
+				\item section
+				\item subsection
+				\item subsubsection
+			\end{itemize}
+		\item Bericht $ \Rightarrow $ report, scrreprt
+			\begin{itemize}[<+->]
+				\item chapter
+			\end{itemize}
+		\item Bücher $ \Rightarrow $ book, scrbook
+			\begin{itemize}[<+->]
+				\item part
+			\end{itemize}
 	\end{itemize}
 \end{frame}
