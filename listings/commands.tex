@@ -2,3 +2,24 @@
 \textit{kursiv}
 \underline{unterstrichen}
 \textbf{\underline{\textit{kombination}}}
+\tableofcontents %Inhaltsverzeichnis
+\listoffigures % Abbildungsverzeichnis
+\listoftables % Tabellenverzeichnis
+\lstlistoflistings % Listingsverzeichnis
+\begin{figure}[tbph]
+\centering
+\includegraphics[width=0.7\linewidth]{./pictures/logo}
+\caption[ich steh im verzeichnis]{ich steh unter der grafik}
+\label{fig:logo-sm}
+\end{figure}
+\begin{table}[tbph]
+\centering
+	\begin{tabular}{|*3{>{\centering\arraybackslash}m{0.3\textwidth}|}}
+	\hline
+	\textbf{kopf}&\textbf{kopf}&\textbf{kopf} \\ \hline
+	inhalt & inhalt & inhalt \\ 
+	inhalt & inhalt & inhalt \\ 
+	\hline
+	\end{tabular} 
+	\caption[ich steh im verzeichnis]{ich steh unter der Tabelle}
+\end{table}

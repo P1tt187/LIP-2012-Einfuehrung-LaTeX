@@ -70,5 +70,62 @@
 			\begin{itemize}[<+->]
 				\item part
 			\end{itemize}
+		\item Präsentation $ \Rightarrow $ beamer
+			\begin{itemize}[<+->]
+				\item part
+				\item section
+				\item subsection
+			\end{itemize}
 	\end{itemize}
+\end{frame}
+
+\begin{frame}{Verzeichnisse}
+\lstsettex
+	\begin{itemize}[<+->]
+	\item \lstinputlisting[linerange=5-5]{./listings/commands.tex}
+	\item \lstinputlisting[linerange=6-6]{./listings/commands.tex}
+	\item \lstinputlisting[linerange=7-7]{./listings/commands.tex}
+	\item \lstinputlisting[linerange=8-8]{./listings/commands.tex}
+	\end{itemize}
+\end{frame}
+\begin{frame}{Grafiken}
+\lstsettex
+\begin{Code}
+\centering
+\lstinputlisting[linerange=9-14,commentstyle=\small\color{sh_comment}\textit,
+        keywordstyle=\small\color{sh_keyword}\bfseries,
+        basicstyle=\small\ttfamily,
+        stringstyle=\small\color{sh_string}\ttfamily]{./listings/commands.tex}
+\end{Code}
+\end{frame}
+\begin{frame}{Grafiken}
+\begin{figure}[tbph]
+\centering
+\includegraphics[width=0.7\linewidth]{./pictures/logo}
+\caption[ich steh im verzeichnis]{ich steh unter der grafik}
+\label{fig:logo-sm}
+\end{figure}
+\end{frame}
+\begin{frame}{Tabellen}
+\lstsettex
+\begin{Code}
+\centering
+\lstinputlisting[linerange=15-25,commentstyle=\small\color{sh_comment}\textit,
+        keywordstyle=\small\color{sh_keyword}\bfseries,
+        basicstyle=\small\ttfamily,
+        stringstyle=\small\color{sh_string}\ttfamily]{./listings/commands.tex}
+\end{Code}
+\end{frame}
+\begin{frame}{Tabellen}
+\begin{table}[tbph]
+\centering
+	\begin{tabular}{|*3{>{\centering\arraybackslash}m{0.2\textwidth}|}}
+	\hline
+	\textbf{kopf} & \textbf{kopf} & \textbf{kopf} \\ \hline
+	inhalt & inhalt & inhalt \\ 
+	inhalt & inhalt & inhalt \\ 
+	\hline
+	\end{tabular} 
+	\caption[ich steh im verzeichnis]{ich steh unter der Tabelle}
+\end{table}
 \end{frame}
