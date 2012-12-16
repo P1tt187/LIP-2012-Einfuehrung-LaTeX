@@ -14,21 +14,32 @@
 \begin{frame}
 \frametitle{Kreise}
 \begin{table}[!h]
-\begin{tabular}{ccccc}
-$\backslash$ path[draw] & & $\backslash$ path[fill] & & $\backslash$ path[fill=yellow, draw=red] \\
+\begin{tabular}{lr}
+
+$\backslash$begin\{tikzpicture\} & \\
 \\
+$\backslash$path[draw] (0,0) circle (2ex) 
+&
 \begin{tikzpicture}
   \path[draw] (0,0) circle (2ex);
 \end{tikzpicture} 
-& &
+\\  
+\\
+$\backslash$path[fill] (0,-2) circle (2ex) 
+&
 \begin{tikzpicture}
   \path[fill] (0,0) circle (2ex);
 \end{tikzpicture}
-& &
+\\
+\\
+$\backslash$path[fill=yellow, draw=red] (0,-4) circle (2ex)
+&
 \begin{tikzpicture}
   \path[fill=yellow,draw=red] (0,0) circle (2ex);
 \end{tikzpicture}
 \\
+\\
+$\backslash$end\{tikzpicture\} & \\
 \end{tabular}
 \end{table}
 \end{frame}
@@ -36,13 +47,26 @@ $\backslash$ path[draw] & & $\backslash$ path[fill] & & $\backslash$ path[fill=y
 \begin{frame}
 \frametitle{Diagramme}
 \begin{figure}[!h]
-\begin{tikzpicture}[domain=0:4]
-\draw[very thin,color=gray] (-0.1,-1.1) grid (3.9,3.9);
-\draw[->] (-0.2,0) -- (4.2,0) node[right] {$x$};
-\draw[->] (0,-1.2) -- (0,4.2) node[above] {$f(x)$};
-\draw[color=blue] plot (\x,{sin(\x r)}) node[right] {$f(x) = \sin x$};
-\draw[color=orange] plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
-\end{tikzpicture}
+\input{./listings/diagram.tex}
 \end{figure}
-
 \end{frame}
+
+\begin{frame}
+\frametitle{Diagramme}
+	\lstsettex
+	\lstinputlisting{./listings/diagram.tex}
+\end{frame}
+
+\begin{frame}
+\frametitle{Graphen}
+\begin{figure}[!h]
+\input{./listings/graph.tex}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Graphen}
+	\lstsettex
+	\lstinputlisting{./listings/graph.tex}
+\end{frame}
+
