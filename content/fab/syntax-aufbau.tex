@@ -102,7 +102,7 @@
 \begin{figure}[tbph]
 \centering
 \includegraphics[width=0.7\linewidth]{./pictures/logo}
-\caption[ich steh im verzeichnis]{ich steh unter der grafik}
+\caption[ich steh im Verzeichnis]{ich steh unter der Grafik}
 \label{fig:logo-sm}
 \end{figure}
 \end{frame}
@@ -126,6 +126,55 @@
 	inhalt & inhalt & inhalt \\ 
 	\hline
 	\end{tabular} 
-	\caption[ich steh im verzeichnis]{ich steh unter der Tabelle}
+	\caption[ich steh im Verzeichnis]{ich steh unter der Tabelle}
 \end{table}
+\end{frame}
+\begin{frame}{Zitieren}
+Voraussetzungen:\\
+\pause
+*.bib Datei\\
+\pause
+\lstsettex
+\begin{Code}
+\centering
+\lstinputlisting[linerange=26-27,commentstyle=\small\color{sh_comment}\textit,
+        keywordstyle=\small\color{sh_keyword}\bfseries,
+        basicstyle=\small\ttfamily,
+        stringstyle=\small\color{sh_string}\ttfamily]{./listings/commands.tex}
+\end{Code}
+
+\end{frame}
+\begin{frame}{Bib-Datei Beispiel}
+\lstsettex
+\begin{Code}
+\centering
+\lstinputlisting[linerange=1-9,commentstyle=\small\color{sh_comment}\textit,
+        keywordstyle=\small\color{sh_keyword}\bfseries,
+        basicstyle=\small\ttfamily,
+        stringstyle=\small\color{sh_string}\ttfamily]{./listings/bibliography.bib}
+\end{Code}
+\end{frame}
+\begin{frame}{Auf BibTeX-Eintrag zugreifen}
+\lstsettex
+\begin{Code}
+\centering
+\lstinputlisting[linerange=28-29,commentstyle=\small\color{sh_comment}\textit,
+        keywordstyle=\small\color{sh_keyword}\bfseries,
+        basicstyle=\small\ttfamily,
+        stringstyle=\small\color{sh_string}\ttfamily,caption={beliebige \TeX -Datei}]{./listings/commands.tex}
+\end{Code}
+\pause
+ich zitiere hier \cite{braun:scala}\\
+ich zitiere hier auch \footcite{braun:scala}
+\end{frame}
+\begin{frame}{Literaturverzeichnis}
+\lstsettex
+\begin{Code}
+\centering
+\lstinputlisting[linerange=30-30,commentstyle=\small\color{sh_comment}\textit,
+        keywordstyle=\small\color{sh_keyword}\bfseries,
+        basicstyle=\small\ttfamily,
+        stringstyle=\small\color{sh_string}\ttfamily]{./listings/commands.tex}
+\end{Code}
+\printbibliography
 \end{frame}

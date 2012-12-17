@@ -9,17 +9,22 @@
 \begin{figure}[tbph]
 \centering
 \includegraphics[width=0.7\linewidth]{./pictures/logo}
-\caption[ich steh im verzeichnis]{ich steh unter der grafik}
+\caption[ich steh im Verzeichnis]{ich steh unter der Grafik}
 \label{fig:logo-sm}
 \end{figure}
 \begin{table}[tbph]
 \centering
-	\begin{tabular}{|*3{>{\centering\arraybackslash}m{0.3\textwidth}|}}
+	\begin{tabular}{|*3{>{\centering\arraybackslash}m{0.2\textwidth}|}}
 	\hline
 	\textbf{kopf}&\textbf{kopf}&\textbf{kopf} \\ \hline
 	inhalt & inhalt & inhalt \\ 
 	inhalt & inhalt & inhalt \\ 
 	\hline
 	\end{tabular} 
-	\caption[ich steh im verzeichnis]{ich steh unter der Tabelle}
+	\caption[ich steh im Verzeichnis]{ich steh unter der Tabelle}
 \end{table}
+\usepackage[style=alphabetic-verb,backend=bibtex,natbib=true]{biblatex}
+\bibliography{./pfad/zur/bib/datei}
+ich zitiere hier \cite{braun:scala}
+ich zitiere hier auch \footcite{braun:scala}
+\printbibliography
