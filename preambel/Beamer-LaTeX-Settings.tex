@@ -64,3 +64,10 @@
 
 \usepackage{tikz}
 
+\AtBeginSection[] {
+  \begin{frame}
+    \frametitle{Übersicht}
+    \tableofcontents[currentsection]
+  \end{frame}
+  \addtocounter{framenumber}{-1}
+} 
